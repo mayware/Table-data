@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    padding: 0 1.5rem;
+    background: #003f88;
+    border-bottom: 1px solid #101010;
+    box-shadow: 0 2px 35px 0 rgb(0, 0, 0, .5);
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 700;
+    color: #e9ecef;
+    transition: 200ms ease-in-out;
+}
+
+.nav-link:hover {
+    color: #adb5bd;
+    transition: 200ms ease-in-out;
+}
