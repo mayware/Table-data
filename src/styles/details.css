@@ -1,7 +1,7 @@
 .details-table {
     width: 978px;
     height: 700px;
-    padding: .5rem;
+    padding: 1rem;
     border-radius: 5px;
     background: #151515;
     box-shadow: 0px 0px 5px #000;
@@ -14,15 +14,8 @@
     padding: .5rem;
     height: 300px;
     border-radius: 5px;
-    border: 1px solid #415a77;
-    background: #202020;
-}
-
-.authors-books-list {
-    height: 350px;
-    border-radius: 5px;
-    border: 1px solid #415a77;
-    background: #202020;
+    /* border: 1px solid #343a40; */
+    background: #151515;
 }
 
 .book-cover {
@@ -42,14 +35,13 @@
     width: 300px;
     padding: .5rem;
     margin-right: .5rem;
-    border: 1px solid #778da9;
 }
 
 .book-desc-area {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 1px solid #778da9;
+    background: #202020;
     height: 280px;
     width: 425px;
 }
@@ -58,12 +50,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 45px;
+    height: 35px;
     width: 100%;
     font-size: 16px;
     font-weight: 500;
     color: #dee2e6;
-    background: #001d3d;
+    background: #003566;
 }
 
 .books-desc-info {
@@ -92,4 +84,41 @@
     font-size: 16px;
     font-weight: 500;
     color: #00a6fb;
+}
+
+.author-booklist-area {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #343a40;
+}
+
+.authors-books-list {
+    height: 315px;
+    width: 100%;
+    overflow-y: auto;
+    background: #151515;
+}
+
+.author-book-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 5px;
+    background: #202020;
+    border: 1px solid #343a40;
+}
+
+.author-book-title {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffd60a;
+}
+
+.author-book-kind {
+    font-size: 14px;
+    font-weight: 500;
+    color: #dee2e6;
 }

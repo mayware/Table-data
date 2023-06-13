@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 const TableData = ({ data, selectRow }) => {
 
     return (
         <div className="table-body-col">
             {data.items.map((item) => (
-                <button className="item-row" key={item.id} onClick={() => { selectRow(item) }}>
+                <Link to="/details" className="item-row" key={item.id} onClick={() => { selectRow(item) }}>
                     <div className="item-id row-cell">{item.id}</div>
                     <div className="item-author row-cell">{item.volumeInfo.authors ?
                         (item.volumeInfo.authors) :
@@ -14,7 +15,7 @@ const TableData = ({ data, selectRow }) => {
                     <div className="item-kind row-cell">{item.volumeInfo.categories ?
                         (item.volumeInfo.categories) :
                         (<span className="unavailable-msg">Book's kind is unavailable</span>)}</div>
-                </button>
+                </Link>
             ))}
         </div>
     );

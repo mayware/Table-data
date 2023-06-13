@@ -1,10 +1,18 @@
-const AuthorBooks = ({ author }) => {
+import { Link } from "react-router-dom";
+
+const AuthorBooks = ({ author, selectBook }) => {
+
     return (
         <div className="author-books-list">
             {author.items.map((book) => (
-                <div className="author-book-row" key={book.id}>
-                    {book.volumeInfo.title}
-                </div>
+                <Link to="/selected" className="author-book-row" key={book.id} onClick={() => { selectBook(book) }}>
+                    <div className="author-book-title">
+                        {book.volumeInfo.title}
+                    </div>
+                    <div className="author-book-kind">
+                        {book.volumeInfo.categories ? (book.volumeInfo.categories) : (<span className="unavailable-msg">Book genre is unavailable</span>)}
+                    </div>
+                </Link>
             ))}
         </div>
     );

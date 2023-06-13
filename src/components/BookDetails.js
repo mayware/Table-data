@@ -51,18 +51,18 @@ const BookDetails = ({ selectedRow }) => {
                         <div className="book-year book-info">
                             <span className='book-key-title'>Year:</span>
                             <span className='book-value'>
-                                {selectedRow.volumeInfo.publishedDate ? (selectedRow.volumeInfo.publishedDate) : (<span className="unavailable-msg">Title is unavailable</span>)}
+                                {selectedRow.volumeInfo.publishedDate ? (selectedRow.volumeInfo.publishedDate) : (<span className="unavailable-msg">Publish year is unavailable</span>)}
                             </span>
                         </div>
                         <div className="book-kind book-info">
                             <span className='book-key-title'>kind:</span>
                             <span className='book-value'>
-                                {selectedRow.volumeInfo.categories ? (selectedRow.volumeInfo.categories) : (<span className="unavailable-msg">Title is unavailable</span>)}
+                                {selectedRow.volumeInfo.categories ? (selectedRow.volumeInfo.categories) : (<span className="unavailable-msg">Kind is unavailable</span>)}
                             </span>
                         </div>
                         <div className="book-country book-info">
                             <span className='book-key-title'>Country:</span>
-                            <span className='book-value'>{selectedRow.saleInfo.country ? (selectedRow.saleInfo.country) : (<span className="unavailable-msg">Title is unavailable</span>)}</span>
+                            <span className='book-value'>{selectedRow.saleInfo.country ? (selectedRow.saleInfo.country) : (<span className="unavailable-msg">Country is unavailable</span>)}</span>
                         </div>
                     </div>
                     <div className="book-desc-area">
@@ -74,10 +74,13 @@ const BookDetails = ({ selectedRow }) => {
                         </div>
                     </div>
                 </div>
-                <div className="authors-books-list">
-                    {currentAuthor}
-                    {author && <AuthorBooks author={author} />}
+                <div className="author-booklist-area">
+                    <div className="books-desc-header">More books by this author</div>
+                    <div className="authors-books-list">
+                        {author && <AuthorBooks author={author} />}
+                    </div>
                 </div>
+
             </div>
         </div>
     );

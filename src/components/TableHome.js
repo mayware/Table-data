@@ -5,7 +5,7 @@ import useAxios from '../useAxios';
 
 
 const TableHome = ({ selectRow }) => {
-    const { data, error, loading } = useAxios('https://www.googleapis.com/books/v1/volumes?q=subject:"technology"&key=AIzaSyB_DtGjM49I7Rk-CLkYoxN5odpW68vUdyM&maxResults=16');
+    const { data, error, loading } = useAxios('https://www.googleapis.com/books/v1/volumes?q=subject:life&key=AIzaSyB_DtGjM49I7Rk-CLkYoxN5odpW68vUdyM&maxResults=36');
 
     return (
         <div className="content">
