@@ -12,19 +12,25 @@ body {
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   min-height: 100vh;
-  padding-top: 65px;
+  padding-top: 75px;
 }
 
 .content {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
-  color: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.breadcrumb {
+  width: 978px;
+  margin-bottom: 1rem;
 }

@@ -34,7 +34,7 @@
     justify-content: center;
     background: #00509d;
     height: 35px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     width: 100%;
     border: 1px solid #00296b;
@@ -68,7 +68,7 @@
     width: 100%;
     margin: .1rem;
     padding: .5rem;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: #edf2f4;
     border: 1px solid #000;
@@ -76,4 +76,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.unavailable-msg {
+    color: #ef233c;
 }

@@ -21,10 +21,6 @@ function useAxios(url) {
         getData();
     }, [url])
 
-    useEffect(() => {
-        console.log(data);
-    }, [data]);
-
 
     return { data, error, loading }
 }

@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import useAxios from '../useAxios';
 
 
-const TableHome = () => {
-    const { data, error, loading } = useAxios('https://www.googleapis.com/books/v1/volumes?q=*&key=AIzaSyB_DtGjM49I7Rk-CLkYoxN5odpW68vUdyM');
+const TableHome = ({ selectRow }) => {
+    const { data, error, loading } = useAxios('https://www.googleapis.com/books/v1/volumes?q=*&key=AIzaSyB_DtGjM49I7Rk-CLkYoxN5odpW68vUdyM&maxResults=16');
 
     return (
         <div className="content">
@@ -20,7 +20,7 @@ const TableHome = () => {
                         </div>
                     </div>
                     <div className="table-body">
-                        {data && <TableData data={data} />}
+                        {data && <TableData data={data} selectRow={selectRow} />}
                     </div>
                 </div>
             </div>
