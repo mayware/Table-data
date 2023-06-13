@@ -5,8 +5,7 @@ import useAxios from '../useAxios';
 
 
 const TableHome = () => {
-
-    const { data, error, loading } = useAxios('https://jsonplaceholder.typicode.com/users');
+    const { data, error, loading } = useAxios('https://www.googleapis.com/books/v1/volumes?q=*&key=AIzaSyB_DtGjM49I7Rk-CLkYoxN5odpW68vUdyM');
 
     return (
         <div className="content">
@@ -14,16 +13,14 @@ const TableHome = () => {
                 <div className="table">
                     <div className='table-header'>
                         <div className='table-header-row'>
-                            <button className='table-header-item'>ID</button>
-                            <button className='table-header-item'>Author</button>
-                            <button className='table-header-item'>Title</button>
-                            <button className='table-header-item'>Kind</button>
+                            <div className='table-header-item'>ID</div>
+                            <div className='table-header-item'>Author</div>
+                            <div className='table-header-item'>Title</div>
+                            <div className='table-header-item'>Kind</div>
                         </div>
                     </div>
                     <div className="table-body">
-                        <div className="table-body-col">
-                            {data && <TableData data={data} />}
-                        </div>
+                        {data && <TableData data={data} />}
                     </div>
                 </div>
             </div>
