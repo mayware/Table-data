@@ -12,7 +12,6 @@ function App() {
 
   function selectRow(row) {
     setSelectedRow(row);
-    console.log(selectedRow);
   }
 
 

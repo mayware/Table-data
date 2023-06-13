@@ -14,14 +14,14 @@
     padding: .5rem;
     height: 300px;
     border-radius: 5px;
-    border: 1px solid #343a40;
+    border: 1px solid #415a77;
     background: #202020;
 }
 
 .authors-books-list {
     height: 350px;
     border-radius: 5px;
-    border: 1px solid #343a40;
+    border: 1px solid #415a77;
     background: #202020;
 }
 
@@ -38,8 +38,58 @@
 }
 
 .books-brief-info {
-    height: 280px;
+    height: 100%;
     width: 300px;
     padding: .5rem;
-    border: 1px solid #fff;
+    margin-right: .5rem;
+    border: 1px solid #778da9;
+}
+
+.book-desc-area {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #778da9;
+    height: 280px;
+    width: 425px;
+}
+
+.books-desc-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #dee2e6;
+    background: #001d3d;
+}
+
+.books-desc-info {
+    padding: .5rem;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+.book-desciption {
+    font-size: 14px;
+    color: #dee2e6;
+}
+
+.book-info {
+    margin-bottom: .5rem;
+}
+
+.book-key-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: .5rem;
+    color: #dee2e6;
+}
+
+.book-value {
+    font-size: 16px;
+    font-weight: 500;
+    color: #00a6fb;
 }
