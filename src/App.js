@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TableHome from "./components/TableHome";
 import Navbar from "./components/Navbar";
-import BookDetails from "./components/BookDetails";
+import BookDetails from './components/BookDetails';
 import SelectedBook from "./components/SelectedBook";
 import Breadcrumbds from "./components/Breadcrumbs";
 import ErrorPage from "./components/ErrorPage";

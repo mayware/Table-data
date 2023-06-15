@@ -5,22 +5,7 @@ import { useState, useEffect } from 'react';
 
 const BookDetails = ({ selectedRow }) => {
 
-    const [currentAuthor, setCurrentAuthor] = useState('');
-    const [url, setUrl] = useState('');
-    useEffect(() => {
-        setCurrentAuthor(selectedRow.volumeInfo.authors);
-    }, [selectedRow])
-
-    useEffect(() => {
-        const newUrl = `https://www.googleapis.com/books/v1/volumes?q=inauthor:${currentAuthor}&key=AIzaSyB_DtGjM49I7Rk-CLkYoxN5odpW68vUdyM&maxResults=16`;
-
-        if (url !== newUrl) {
-            setUrl(newUrl);
-        }
-    }, [currentAuthor, url]);
-
-    const { data: author, error, loading } = useAxios(url);
-
+    const { data: author, error, loading } = useAxios(`https://www.googleapis.com/books/v1/volumes?q=inauthor:${selectedRow.volumeInfo.authors[0]}&key=AIzaSyB_DtGjM49I7Rk-CLkYoxN5odpW68vUdyM&maxResults=16`);
 
     return (
         <div className="content">
@@ -55,7 +40,7 @@ const BookDetails = ({ selectedRow }) => {
                             </span>
                         </div>
                         <div className="book-kind book-info">
-                            <span className='book-key-title'>kind:</span>
+                            <span className='book-key-title'>Kind:</span>
                             <span className='book-value'>
                                 {selectedRow.volumeInfo.categories ? (selectedRow.volumeInfo.categories) : (<span className="unavailable-msg">Kind is unavailable</span>)}
                             </span>

@@ -7,6 +7,9 @@ const AuthorBooks = ({ author, selectBook }) => {
             {author.items.map((book) => (
                 <Link to="/selected" className="author-book-row" key={book.id} onClick={() => { selectBook(book) }}>
                     <div className="author-book-title">
+                        {book.volumeInfo.authors}
+                    </div>
+                    <div className="author-book-title">
                         {book.volumeInfo.title}
                     </div>
                     <div className="author-book-kind">
