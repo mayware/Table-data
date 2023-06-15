@@ -2,19 +2,19 @@ import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Breadcrumbds = ({ selectedId }) => {
-    const [bookedId, setBookedId] = useState('');
-    const [newId, setNewId] = useState('');
+    const [bookId, setBookId] = useState('');
+    const [nextId, setNextId] = useState('');
 
     useEffect(() => {
-        setBookedId(selectedId)
+        setBookId(selectedId)
     }, [selectedId])
 
     useEffect(() => {
-        if (newId !== bookedId) {
-            setNewId(bookedId);
+        if (bookId && bookId !== selectedId) {
+            setNextId(selectedId);
         }
+    }, [bookId, selectedId]);
 
-    }, [bookedId])
 
     return (
         <div className="breadcrumb">
@@ -22,10 +22,10 @@ const Breadcrumbds = ({ selectedId }) => {
                 <NavLink to="/" className="breadcrumb-link">
                     Home
                 </NavLink>
-                {bookedId && <NavLink to={`/details/${bookedId}`} className="breadcrumb-link">
+                {bookId && <NavLink to={`/details/${bookId}`} className="breadcrumb-link">
                     Details
                 </NavLink>}
-                {newId && <NavLink to={`/details/${bookedId}`} className="breadcrumb-link">
+                {nextId && <NavLink to={`/selected/${nextId}`} className="breadcrumb-link">
                     Selected
                 </NavLink>}
             </div>
