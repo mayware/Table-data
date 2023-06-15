@@ -1,6 +1,6 @@
 import '../styles/table.css'
 import TableData from './TableData';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import useAxios from '../useAxios';
 
 
