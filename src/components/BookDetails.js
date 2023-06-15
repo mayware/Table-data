@@ -3,9 +3,11 @@ import AuthorBooks from './AuthorBooks';
 import useAxios from '../useAxios';
 import { useState, useEffect } from 'react';
 
-const BookDetails = ({ selectedRow }) => {
+const BookDetails = ({ selectedRow, selectBook }) => {
+
 
     const { data: author, error, loading } = useAxios(`https://www.googleapis.com/books/v1/volumes?q=inauthor:${selectedRow.volumeInfo.authors[0]}&key=AIzaSyB_DtGjM49I7Rk-CLkYoxN5odpW68vUdyM&maxResults=16`);
+
 
     return (
         <div className="content">
@@ -62,7 +64,7 @@ const BookDetails = ({ selectedRow }) => {
                 <div className="author-booklist-area">
                     <div className="books-desc-header">More books by this author</div>
                     <div className="authors-books-list">
-                        {author && <AuthorBooks author={author} />}
+                        {author && <AuthorBooks author={author} selectBook={selectBook} />}
                     </div>
                 </div>
 

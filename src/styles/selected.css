@@ -1,8 +1,79 @@
 .selected-book-card {
     width: 978px;
-    height: 700px;
+    height: 600px;
     padding: 1rem;
     border-radius: 5px;
-    background: #3d405b;
+    background: #202020;
     box-shadow: 0px 0px 5px #000;
+}
+
+.selected-book-card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selected-book-cover {
+    height: 350px;
+    width: 270px;
+    margin-right: .5rem;
+}
+
+.selected-book-cover-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.selected-books-brief-info {
+    height: 350px;
+    width: 250px;
+}
+
+.selected-book-key-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: .5rem;
+    color: #dee2e6;
+}
+
+.selected-book-value {
+    font-size: 16px;
+    font-weight: 500;
+    color: #00a6fb;
+}
+
+.selected--info {
+    margin-bottom: .5rem;
+}
+
+.selected-book-desc-area {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #202020;
+    height: 350px;
+    width: 425px;
+}
+
+.selected-books-desc-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #dee2e6;
+    background: #003566;
+}
+
+.selected-books-desc-info {
+    overflow-y: auto;
+    /* text-align: justify; */
+}
+
+.selected-book-desciption {
+    font-size: 14px;
+    color: #dee2e6;
 }
