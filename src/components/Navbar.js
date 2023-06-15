@@ -12,9 +12,6 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-right">
-                <NavLink to="/details" className={`nav-link`}>
-                    <span>Details</span>
-                </NavLink>
             </div>
         </nav>
     );

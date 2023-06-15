@@ -1,13 +1,16 @@
 import '../styles/details.css'
 import AuthorBooks from './AuthorBooks';
 import useAxios from '../useAxios';
-import { useState, useEffect } from 'react';
+import { useParams } from "react-router-dom";
+import { useEffect } from 'react';
 
-const BookDetails = ({ selectedRow, selectBook }) => {
-
-
+const BookDetails = ({ selectedRow, selectBook, selectBookId }) => {
+    const { id } = useParams();
     const { data: author, error, loading } = useAxios(`https://www.googleapis.com/books/v1/volumes?q=inauthor:${selectedRow.volumeInfo.authors[0]}&key=AIzaSyB_DtGjM49I7Rk-CLkYoxN5odpW68vUdyM&maxResults=16`);
 
+    useEffect(() => {
+        selectBookId(id);
+    }, [id, selectBookId])
 
     return (
         <div className="content">

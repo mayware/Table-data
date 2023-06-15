@@ -1,6 +1,13 @@
 import '../styles/selected.css'
+import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 
-const SelectedBook = ({ selectedBook }) => {
+const SelectedBook = ({ selectedBook, selectBookId }) => {
+
+    const { id } = useParams();
+    useEffect(() => {
+        selectBookId(id);
+    }, [id, selectBookId])
 
     return (
         <div className="content">

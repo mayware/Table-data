@@ -4,7 +4,7 @@ const TableData = ({ data, selectRow }) => {
     return (
         <div className="table-body-col">
             {data.items.map((item) => (
-                <Link to="/details" className="item-row" key={item.id} onClick={() => { selectRow(item) }}>
+                <Link to={`/details/${item.id}`} className="item-row" key={item.id} onClick={() => { selectRow(item) }}>
                     <div className="item-id row-cell">{item.id}</div>
                     <div className="item-author row-cell">{item.volumeInfo.authors ?
                         (item.volumeInfo.authors) :
