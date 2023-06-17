@@ -16,7 +16,7 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  padding-top: 85px;
+  padding: 85px 0 85px 0;
 }
 
 .content {
@@ -32,13 +32,15 @@ code {
 
 .breadcrumb {
   width: 978px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .breadcrumb-link {
+  margin-right: 1rem;
   text-decoration: none;
-  padding: .5rem;
-  border-radius: 5px;
-  background: #202020;
   color: #edf2f4;
+}
+
+.breadcrumb-link-text {
+  margin-right: .5rem;
 }

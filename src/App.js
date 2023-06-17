@@ -46,7 +46,7 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="container">
-          <Breadcrumbds selectedId={selectedId} />
+          <Breadcrumbds selectedId={selectedId} selectedRow={selectedRow} selectedBook={selectedBook} />
           <Routes>
             <Route
               exact
