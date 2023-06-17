@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# The main goal of this application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The main purpose of this application is to make it easier to review books using Google Books API.
+The list of returned books is displayed on the main page table.
+This application includes functionalities such as, breadcrumbs, which helps users to navigate in between paths.
 
 ## Available Scripts
 
