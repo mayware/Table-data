@@ -2,7 +2,7 @@
     width: 900px;
     padding: 1rem;
     border-radius: 5px;
-    background: #202020;
+    background: #151515;
     box-shadow: 0px 0px 5px #000;
 }
 
@@ -53,6 +53,28 @@
     background: #202020;
     height: 350px;
     width: 425px;
+    padding: .5rem;
+}
+
+.read-review {
+    margin-top: 1rem;
+}
+
+.read-book-link {
+    padding: .5rem;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    color: #101010;
+    background: #ffbd00;
+    transition: 200ms ease-in-out;
+}
+
+.read-book-link:hover {
+    background: #ff5400;
+    color: #dee2e6;
+    transition: 200ms ease-in-out;
 }
 
 .selected-books-desc-header {
@@ -63,6 +85,8 @@
     width: 100%;
     font-size: 16px;
     font-weight: 500;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     color: #dee2e6;
     background: #003566;
 }

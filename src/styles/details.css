@@ -1,6 +1,5 @@
 .details-table {
     width: 978px;
-    height: 700px;
     padding: 1rem;
     border-radius: 5px;
     background: #151515;
@@ -11,9 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1rem;
-    height: 300px;
     border-radius: 5px;
+    margin-bottom: .5rem;
     background: #151515;
 }
 
@@ -30,9 +28,13 @@
 }
 
 .books-brief-info {
-    height: 100%;
+    height: 280px;
     width: 300px;
     padding: .7rem;
+}
+
+.book-info {
+    margin-bottom: .5rem;
 }
 
 .book-desc-area {
@@ -42,7 +44,7 @@
     background: #202020;
     height: 280px;
     width: 425px;
-    border: 1px solid #343a40;
+    padding: .5rem;
 }
 
 .books-desc-header {
@@ -53,6 +55,8 @@
     width: 100%;
     font-size: 16px;
     font-weight: 500;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     color: #dee2e6;
     background: #003566;
 }
@@ -66,10 +70,6 @@
 .book-desciption {
     font-size: 14px;
     color: #dee2e6;
-}
-
-.book-info {
-    margin-bottom: .5rem;
 }
 
 .book-key-title {
@@ -90,10 +90,12 @@
     align-items: center;
     flex-direction: column;
     border: 1px solid #343a40;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .authors-books-list {
-    height: 315px;
+    height: 345px;
     width: 100%;
     overflow-y: auto;
     background: #151515;
@@ -109,6 +111,12 @@
     background: #202020;
     border: 1px solid #343a40;
     text-decoration: none;
+    transition: 200ms ease-in-out;
+}
+
+.author-book-row:hover {
+    background: #343a40;
+    transition: 200ms ease-in-out;
 }
 
 .author-book-title {

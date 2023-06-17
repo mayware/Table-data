@@ -21,15 +21,15 @@ const Breadcrumbds = ({ selectedId, selectedRow, selectedBook }) => {
             <div className="breadcrumbs-nav">
                 <NavLink to="/" className="breadcrumb-link">
                     <span className="breadcrumb-link-text">Home</span>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <i className="fa-solid fa-chevron-right"></i>
                 </NavLink>
                 {bookId && <NavLink to={`/details/${bookId}`} className="breadcrumb-link">
                     <span className="breadcrumb-link-text">{selectedRow.volumeInfo.authors[0]}</span>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <i className="fa-solid fa-chevron-right"></i>
                 </NavLink>}
                 {nextId && <NavLink to={`/selected/${nextId}`} className="breadcrumb-link">
                     <span className="breadcrumb-link-text">{selectedBook.volumeInfo.title}</span>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <i className="fa-solid fa-chevron-right"></i>
                 </NavLink>}
             </div>
         </div>

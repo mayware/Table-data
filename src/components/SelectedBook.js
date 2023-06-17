@@ -1,7 +1,7 @@
 import '../styles/selected.css'
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 const SelectedBook = ({ selectedBook, selectBookId }) => {
 
     const { id } = useParams();
@@ -50,6 +50,9 @@ const SelectedBook = ({ selectedBook, selectBookId }) => {
                         <div className="selected-book-country book-info">
                             <span className='selected-book-key-title'>Country:</span>
                             <span className='selected-book-value'>{selectedBook.saleInfo.country ? (selectedBook.saleInfo.country) : (<span className="unavailable-msg">Country is unavailable</span>)}</span>
+                        </div>
+                        <div className="read-review">
+                            {selectedBook.volumeInfo.previewLink && <Link target='_blank' to={selectedBook.volumeInfo.previewLink} className='read-book-link'>Online review</Link>}
                         </div>
                     </div>
                     <div className="selected-book-desc-area">

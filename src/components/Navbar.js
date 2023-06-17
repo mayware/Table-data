@@ -7,6 +7,7 @@ const Navbar = () => {
             <div className="navbar-left">
                 <div className="navbar-brand-name">
                     <NavLink to="/" className={`nav-link`}>
+                        <i className="fa-solid fa-book"></i>
                         <span className="nav-brand-title">DataTable</span>
                     </NavLink>
                 </div>

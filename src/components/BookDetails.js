@@ -70,7 +70,6 @@ const BookDetails = ({ selectedRow, selectBook, selectBookId }) => {
                         {author && <AuthorBooks author={author} selectBook={selectBook} />}
                     </div>
                 </div>
-
             </div>
         </div>
     );

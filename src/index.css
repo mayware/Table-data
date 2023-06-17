@@ -16,7 +16,7 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  padding: 85px 0 85px 0;
+  padding: 75px 0 85px 0;
 }
 
 .content {
@@ -43,4 +43,13 @@ code {
 
 .breadcrumb-link-text {
   margin-right: .5rem;
+}
+
+@media (max-width: 768px) {
+  .breadcrumb-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem;
+  }
 }

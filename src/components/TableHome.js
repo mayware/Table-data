@@ -16,10 +16,10 @@ const TableHome = ({ selectRow, resetId }) => {
                 <div className="table">
                     <div className='table-header'>
                         <div className='table-header-row'>
-                            <div className='table-header-item'>ID</div>
+                            <div className='table-header-item' id='header-id'>ID</div>
                             <div className='table-header-item'>Author</div>
                             <div className='table-header-item'>Title</div>
-                            <div className='table-header-item'>Kind</div>
+                            <div className='table-header-item' id='header-kind'>Kind</div>
                         </div>
                     </div>
                     <div className="table-body">
