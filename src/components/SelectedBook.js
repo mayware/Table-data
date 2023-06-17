@@ -51,9 +51,6 @@ const SelectedBook = ({ selectedBook, selectBookId }) => {
                             <span className='selected-book-key-title'>Country:</span>
                             <span className='selected-book-value'>{selectedBook.saleInfo.country ? (selectedBook.saleInfo.country) : (<span className="unavailable-msg">Country is unavailable</span>)}</span>
                         </div>
-                        <div className="read-review">
-                            {selectedBook.volumeInfo.previewLink && <Link target='_blank' to={selectedBook.volumeInfo.previewLink} className='read-book-link'>Online review</Link>}
-                        </div>
                     </div>
                     <div className="selected-book-desc-area">
                         <div className="selected-books-desc-header">Description</div>
@@ -61,6 +58,9 @@ const SelectedBook = ({ selectedBook, selectBookId }) => {
                             <span className="selected-book-desciption">
                                 {selectedBook.volumeInfo.description ? (selectedBook.volumeInfo.description) : (<span className="unavailable-msg">Description is unavailable</span>)}
                             </span>
+                        </div>
+                        <div className="read-review">
+                            {selectedBook.volumeInfo.previewLink && <Link target='_blank' to={selectedBook.volumeInfo.previewLink} className='read-book-link'>Online review</Link>}
                         </div>
                     </div>
                 </div>

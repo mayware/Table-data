@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+import '../styles/breadcrumbs.css'
 
 const Breadcrumbds = ({ selectedId, selectedRow, selectedBook }) => {
     const [bookId, setBookId] = useState('');

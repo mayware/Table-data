@@ -1,0 +1,25 @@
+.breadcrumb {
+    width: 850px;
+    margin-bottom: 1.5rem;
+}
+
+.breadcrumb-link {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #edf2f4;
+    transition: 200ms ease-in-out;
+}
+
+.breadcrumb-link-text {
+    margin-right: .5rem;
+}
+
+@media (max-width: 978px) {
+    .breadcrumb-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: .5rem;
+        transition: 200ms ease-in-out;
+    }
+}

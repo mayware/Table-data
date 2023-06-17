@@ -8,7 +8,6 @@
 
 .selected-book-card-inner {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -24,8 +23,9 @@
     border-radius: 5px;
 }
 
+
 .selected-books-brief-info {
-    height: 350px;
+    height: 100%;
     width: 250px;
 }
 
@@ -93,10 +93,28 @@
 
 .selected-books-desc-info {
     overflow-y: auto;
-    /* text-align: justify; */
+    text-align: justify;
 }
 
 .selected-book-desciption {
     font-size: 14px;
     color: #dee2e6;
+}
+
+@media (max-width: 978px) {
+    .selected-book-card {
+        width: 600px;
+    }
+
+    .selected-book-card-inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .selected-book-card {
+        width: 450px;
+    }
 }
