@@ -1,9 +1,10 @@
 .table-area {
-    width: 978px;
+    width: 850px;
     padding: 1.5rem;
     border-radius: 15px;
     background: #202020;
     box-shadow: 0px 0px 5px #000;
+    transition: 200ms ease-in-out;
 }
 
 .table {
@@ -39,6 +40,7 @@
     width: 100%;
     border: 1px solid #202020;
     color: #edf2f4;
+    transition: 200ms ease-in-out;
 }
 
 #header-id {
@@ -90,8 +92,50 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    transition: 200ms ease-in-out;
 }
 
 .unavailable-msg {
     color: #ef233c;
+}
+
+@media (max-width: 978px) {
+    .table-area {
+        width: 600px;
+    }
+
+    .table-header-item {
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .row-cell {
+        font-size: 12px;
+        padding: .5rem;
+    }
+
+    .table-area {
+        padding: 1rem;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-area {
+        width: 450px;
+    }
+
+    .table-header-item {
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .row-cell {
+        font-size: 12px;
+        padding: .5rem;
+    }
+
+    .table-area {
+        padding: .5rem;
+    }
 }
